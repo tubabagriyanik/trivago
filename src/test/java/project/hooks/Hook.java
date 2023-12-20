@@ -16,7 +16,7 @@ public class Hook {
 
     }
     //
-    public static RequestSpecification spec;
+
 
     @After
     public void tearDown(Scenario scenario){
