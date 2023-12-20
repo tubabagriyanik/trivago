@@ -45,9 +45,7 @@ public class FakerUtils {
         String birthDay = "1980-01-01"; //faker.number().numberBetween(1970,2000) + "-01-01";
         return birthDay;
     }
-    public static Integer creditScoreFaker(){
-        return Faker.instance().number().numberBetween(1,100);
-    }
+
     public static String lessonFaker(){
         return Faker.instance().programmingLanguage().name();
     }

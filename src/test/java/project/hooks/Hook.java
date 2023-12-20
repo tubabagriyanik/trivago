@@ -17,19 +17,6 @@ public class Hook {
     }
     //
     public static RequestSpecification spec;
-    @Before( value = "@ApiRegistrant")
-    public void setup(){
-
-        spec = new RequestSpecBuilder().setBaseUri(ConfigReader.getProperty("base_url")).build();
-    }
-    @Before(order = 1, value = "@UIRegistration")
-    public void navigateToRegistrationPage(){
-        Driver.getDriver().get(ConfigReader.getProperty("url"));
-    }
-    @Before(order = 1, value = "@Appointment")
-    public void navigateToLandingPage(){
-        Driver.getDriver().get(ConfigReader.getProperty("url"));
-    }
 
     @After
     public void tearDown(Scenario scenario){
