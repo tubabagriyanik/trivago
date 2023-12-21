@@ -1,6 +1,2 @@
-Feature: jgfh
-fdknldjns
-
-  kjdfbksjbd
-  jvsnvsdj
+Feature:
   
