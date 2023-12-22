@@ -6,10 +6,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import project.pages.HomePage;
 import project.pages.SearchPage;
-import project.utilities.ConfigReader;
-import project.utilities.Driver;
-import project.utilities.JSUtils;
-import project.utilities.WaitUtils;
+import project.utilities.*;
 
 public class Us06_House_Details_stepDefs {
     HomePage homePage=new HomePage();
@@ -31,12 +28,14 @@ public class Us06_House_Details_stepDefs {
 
 //        ReusableMethods.clickWithTimeOut(homePage.searchButton,5);
 
+
+
     }
     @Then("user clicks property type dropdown menu")
     public void user_clicks_property_type_dropdown_menu() {
 
     }
-    @When("user selects the house\\/ apartment checkbox")
+    @When("user selects the house or apartment checkbox")
     public void user_selects_the_house_apartment_checkbox() {
 
     }

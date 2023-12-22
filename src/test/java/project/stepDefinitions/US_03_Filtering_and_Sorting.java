@@ -14,8 +14,7 @@ public class US_03_Filtering_and_Sorting {
     FilteringandSortingPage filterandSortingPage = new FilteringandSortingPage();
 
     @Given("User navigates to {string}")
-    public void userNavigatesTo(String url) {
-        Driver.getDriver().get(ConfigReader.getProperty(url));
+    public void userNavigatesTo(String url) {Driver.getDriver().get(ConfigReader.getProperty(url));
     }
 
 

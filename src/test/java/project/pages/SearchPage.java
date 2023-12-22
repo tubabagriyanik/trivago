@@ -12,7 +12,15 @@ public class SearchPage extends BasePage{
     public WebElement checkOutClick;
     @FindBy(xpath = "//span[@class='inline-flex leading-none -rotate-90 transform transform']")
     public WebElement propertyType;
-    @FindBy(xpath = "//span[text()='Montréal']")
+
+    @FindBy(xpath = "//li[@data-testid='accommodation-type-filter-entire house / apartment']")
+    public WebElement entireHouseCheckbox;
+     @FindBy(xpath = "//button[@data-testid='filters-popover-apply-button']")
+    public WebElement applyButton;
+
+
+   @FindBy(xpath = "//span[text()='Montréal']")
         public WebElement montreal;
+
 
 }
