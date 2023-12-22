@@ -9,7 +9,7 @@ import project.pages.HomePage;
 import project.pages.SearchPage;
 import project.utilities.*;
 
-public class Us06_House_Details_stepDefs {
+public class us06_House_Details_stepDefs {
     HomePage homePage=new HomePage();
     @Given("user go to home page")
     public void user_go_to_home_page() {
@@ -36,7 +36,7 @@ public class Us06_House_Details_stepDefs {
     public void user_clicks_property_type_dropdown_menu() {
 
     }
-    @When("user selects the house\\/ apartment checkbox")
+    @When("user selects the house or apartment checkbox")
     public void user_selects_the_house_apartment_checkbox() {
 
     }
