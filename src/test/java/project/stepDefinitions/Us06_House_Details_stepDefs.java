@@ -9,7 +9,7 @@ import project.pages.HomePage;
 import project.pages.SearchPage;
 import project.utilities.*;
 
-public class us06_House_Details_stepDefs {
+public class Us06_House_Details_stepDefs {
     HomePage homePage=new HomePage();
     @Given("user go to home page")
     public void user_go_to_home_page() {
