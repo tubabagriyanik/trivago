@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BasePage {
 
-    @FindBy(xpath = "//span[text()='Search']")
+    @FindBy(xpath = "//button[@class='SearchButtonWithLoader_button___1Bps']")
     public WebElement searchButton;
     @FindBy(xpath = "//strong[text()='Property type']")
     public WebElement propertyType;
