@@ -7,7 +7,14 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import project.pages.HomePage;
 import project.pages.SearchPage;
+
 import project.utilities.*;
+
+import project.utilities.ConfigReader;
+import project.utilities.Driver;
+import project.utilities.JSUtils;
+import project.utilities.WaitUtils;
+
 
 public class us06_House_Details_stepDefs {
     HomePage homePage=new HomePage();
@@ -22,6 +29,12 @@ public class us06_House_Details_stepDefs {
         JSUtils.clickElementByJS(searchPage.destination);
         searchPage.destination.sendKeys("Montreal"+ Keys.ENTER);
 //        ActionUtils.scrollUpActions();
+
+        WaitUtils.waitFor(1);
+        JSUtils.clickElementByJS(searchPage.destination);
+        searchPage.destination.sendKeys("Montreal"+ Keys.ENTER);
+//        ActionUtils.scrollUpActions();
+
 
         searchPage.checkInClick.click();
         searchPage.checkOutClick.click();
