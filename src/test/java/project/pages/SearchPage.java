@@ -22,4 +22,5 @@ public class SearchPage extends BasePage{
    @FindBy(xpath = "//span[text()='Montréal']")
         public WebElement montreal;
 
+
 }
