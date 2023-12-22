@@ -11,7 +11,7 @@ import project.utilities.Driver;
 import project.utilities.JSUtils;
 import project.utilities.WaitUtils;
 
-public class us06_House_Details_stepDefs {
+public class Us06_House_Details_stepDefs {
     HomePage homePage=new HomePage();
     @Given("user go to home page")
     public void user_go_to_home_page() {

@@ -6,7 +6,6 @@ Feature: Verify that users can filter and sort search results effectively.
     Given User navigates to "url"
     Then User clicks on Destination home page
     And User waits 2 seconds
-    When User enters a USA
     And User clicks search button
     And User waits 2 seconds
     And User clicks on price

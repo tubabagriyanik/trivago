@@ -23,11 +23,6 @@ public class US_03_Filtering_and_Sorting {
     public void userClicksOnDestinationHomePage() {
       filterandSortingPage.destination.sendKeys("USA");
 
-
-    }
-
-    @When("User enters a USA")
-    public void userEntersAUSA() {
     }
 
     @And("User clicks search button")
