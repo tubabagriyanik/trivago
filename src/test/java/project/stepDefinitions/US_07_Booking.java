@@ -19,6 +19,7 @@ public class US_07_Booking {
 
     }
     @When("User enters a destination")
+
     public void user_enters_a_destination() {
 
     }
