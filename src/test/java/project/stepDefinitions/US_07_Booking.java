@@ -9,11 +9,11 @@ import project.utilities.Driver;
 public class US_07_Booking {
 
 
-    @Given("User navigates to {string}")
-    public void user_navigates_to(String string) {
-
-
-    }
+//    @Given("User navigates to {string}")
+//    public void user_navigates_to(String string) {
+//
+//
+//    }
     @Then("User enters a destination on home page")
     public void user_enters_a_destination_on_home_page() {
 
