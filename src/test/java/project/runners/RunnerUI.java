@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         },
 
         glue = "project.stepDefinitions",
-        tags = "@us06" ,
+        tags = "@US07_Booking" ,
         dryRun = false
 )
 public class RunnerUI {
