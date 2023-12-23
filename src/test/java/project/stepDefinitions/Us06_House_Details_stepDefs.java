@@ -20,7 +20,7 @@ public class Us06_House_Details_stepDefs {
     public void user_clicks_on_search_button(){
         ActionUtils.doubleClick(homePage.searchButton);
         WaitUtils.waitFor(1);
-        searchPage.destination.sendKeys("Toronto"+ Keys.ENTER);
+        searchPage.destination.sendKeys("Toronto",Keys.ENTER);
         searchPage.checkInClick.click();
         searchPage.checkOutClick.click();
         homePage.searchButton.click();
