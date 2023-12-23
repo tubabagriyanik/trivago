@@ -22,16 +22,9 @@ public class SearchPage extends BasePage{
     public WebElement firstHouseTitle;
     @FindBy(xpath = "//span[@data-testid='price-label']")
     public WebElement priceTravel;
-    @FindBy(id = "tabs-296-tab-0")
+    @FindBy(xpath = "//button[@role='tab']")
     public WebElement overview;
-    @FindBy(xpath = "//button[@id='tabs-293-tab-1']")
-    public WebElement info;
-    @FindBy(id = "tabs-343-tab-2")
-    public WebElement photos;
-    @FindBy(id = "tabs-343-tab-3")
-    public WebElement reviews;
-    @FindBy(id = "tabs-343-tab-4")
-    public WebElement price;
+
     @FindBy(xpath= "//article[@data-testid='amenities-module']")
     public WebElement topAmenities;
 
