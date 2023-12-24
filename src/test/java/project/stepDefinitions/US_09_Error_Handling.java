@@ -9,13 +9,9 @@ import project.pages.SearchPage;
 
 public class US_09_Error_Handling {
 
-<<<<<<< HEAD
-=======
     HomePage homePage=new HomePage();
     SearchPage searchPage=new SearchPage();
 
-
->>>>>>> main
     @Given("User clicks on search query box")
     public void user_clicks_on_search_query_box() {
 
@@ -31,9 +27,9 @@ public class US_09_Error_Handling {
 
 // **************************************************************************
 
-<<<<<<< HEAD
-    @When("user clicks on View Deal button of the Hotel information box")
-=======
+
+
+
 
     @Given("User enters destination on the search box")
     public void user_enters_destination_on_the_search_box() {
@@ -44,7 +40,6 @@ public class US_09_Error_Handling {
 
     }
     @When("User clicks on View Deal button of the Hotel information box")
->>>>>>> main
     public void user_clicks_on_view_deal_button_of_the_hotel_information_box() {
 
     }
