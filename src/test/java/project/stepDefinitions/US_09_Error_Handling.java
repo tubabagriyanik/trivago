@@ -19,6 +19,7 @@ public class US_09_Error_Handling {
 
     HomePage homePage=new HomePage();
     SearchPage searchPage=new SearchPage();
+
     BookingPage bookingPage = new BookingPage();
 
     @Given("User clicks on search query box")
@@ -39,6 +40,9 @@ public class US_09_Error_Handling {
     }
 
 // **************************************************************************
+
+
+
 
 
     @Given("User enters destination on the search box")
