@@ -6,10 +6,6 @@ import io.cucumber.java.en.When;
 
 public class US_09_Error_Handling {
 
-//    @Given("User navigates to url")
-//    public void user_navigates_to_url() {
-//
-//    }
     @Given("User clicks on search query box")
     public void user_clicks_on_search_query_box() {
 
@@ -24,19 +20,6 @@ public class US_09_Error_Handling {
     }
 
 
-
-//    @Given("User navigates to url")
-//    public void user_navigates_to_url() {
-//
-//    }
-    @Given("User enters a destination on home page")
-    public void user_enters_a_destination_on_home_page() {
-
-    }
-    @When("user clicks on search button")
-    public void user_clicks_on_search_button() {
-
-    }
     @When("user clicks on View Deal button of the Hotel information box")
     public void user_clicks_on_view_deal_button_of_the_hotel_information_box() {
 
