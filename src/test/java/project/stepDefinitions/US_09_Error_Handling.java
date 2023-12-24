@@ -3,9 +3,19 @@ package project.stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import project.pages.HomePage;
+import project.pages.SearchPage;
+
 
 public class US_09_Error_Handling {
 
+<<<<<<< HEAD
+=======
+    HomePage homePage=new HomePage();
+    SearchPage searchPage=new SearchPage();
+
+
+>>>>>>> main
     @Given("User clicks on search query box")
     public void user_clicks_on_search_query_box() {
 
@@ -19,28 +29,42 @@ public class US_09_Error_Handling {
 
     }
 
+// **************************************************************************
 
+<<<<<<< HEAD
     @When("user clicks on View Deal button of the Hotel information box")
+=======
+
+    @Given("User enters destination on the search box")
+    public void user_enters_destination_on_the_search_box() {
+
+    }
+    @When("User clicks on Search button")
+    public void user_clicks_on_search_button() {
+
+    }
+    @When("User clicks on View Deal button of the Hotel information box")
+>>>>>>> main
     public void user_clicks_on_view_deal_button_of_the_hotel_information_box() {
 
     }
-    @When("website switches to another tab")
+    @When("Website switches to another tab")
     public void website_switches_to_another_tab() {
 
     }
-    @When("user selects a room and clicks on Quick Book button")
+    @When("User selects a room and clicks on Quick Book button")
     public void user_selects_a_room_and_clicks_on_quick_book_button() {
 
     }
-    @When("clicks Continue button on the pop-up message box")
-    public void clicks_continue_button_on_the_pop_up_message_box() {
+    @When("User clicks Continue button on the pop-up message box")
+    public void user_clicks_continue_button_on_the_pop_up_message_box() {
 
     }
-    @When("user enters invalid card number")
+    @When("User enters invalid card number")
     public void user_enters_invalid_card_number() {
 
     }
-    @Then("user should see the error message under card number box")
+    @Then("User should see the error message under card number box")
     public void user_should_see_the_error_message_under_card_number_box() {
 
     }
