@@ -3,59 +3,31 @@ package project.stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.Keys;
 import project.pages.HomePage;
-import project.pages.SearchPage;
-
-import project.utilities.*;
-
 import project.utilities.ConfigReader;
 import project.utilities.Driver;
-import project.utilities.JSUtils;
-import project.utilities.WaitUtils;
-
 
 public class us06_House_Details_stepDefs {
     HomePage homePage=new HomePage();
-    SearchPage searchPage=new SearchPage();
     @Given("user go to home page")
     public void user_go_to_home_page() {
         Driver.getDriver().get(ConfigReader.getProperty("url"));
     }
     @Then("user clicks on search button")
     public void user_clicks_on_search_button() {
-        SearchPage searchPage=new SearchPage();
-        WaitUtils.waitFor(1);
-        JSUtils.clickElementByJS(searchPage.destination);
-        searchPage.destination.sendKeys("Montreal"+ Keys.ENTER);
-//        ActionUtils.scrollUpActions();
 
-
-        WaitUtils.waitFor(1);
-        JSUtils.clickElementByJS(searchPage.destination);
-        searchPage.destination.sendKeys("Montreal"+ Keys.ENTER);
-//        ActionUtils.scrollUpActions();
-
-
-        searchPage.checkInClick.click();
-        searchPage.checkOutClick.click();
-        homePage.searchButton.click();
-
-//        ReusableMethods.clickWithTimeOut(homePage.searchButton,5);
 
     }
     @Then("user clicks property type dropdown menu")
     public void user_clicks_property_type_dropdown_menu() {
-        WaitUtils.waitFor(1);
-        ActionUtils.hoverOverOnElementActions(searchPage.propertyType);
 
     }
-    @When("user selects the house or apartment checkbox")
-    public void userSelectsTheHouseOrApartmentCheckbox() {
+    @When("user selects the house\\/ apartment checkbox")
+    public void user_selects_the_house_apartment_checkbox() {
+
     }
     @Then("user clicks the apply button")
     public void user_clicks_the_apply_button() {
-        searchPage.applyButton.click();
 
     }
     @Then("user verify the house price is visible")
@@ -74,9 +46,6 @@ public class us06_House_Details_stepDefs {
     public void verify_top_amenities_is_visible() {
 
     }
-
-
-
 
 
 }

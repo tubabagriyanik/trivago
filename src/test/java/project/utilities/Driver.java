@@ -27,7 +27,7 @@ public class Driver {
                     driver = new FirefoxDriver();
                     break;
                 default:
-                 WebDriverManager.chromedriver().setup(); //hataya sebeb olan burası
+                    WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
             }
 
