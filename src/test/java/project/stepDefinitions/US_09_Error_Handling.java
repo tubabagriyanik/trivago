@@ -12,7 +12,6 @@ public class US_09_Error_Handling {
     HomePage homePage=new HomePage();
     SearchPage searchPage=new SearchPage();
 
-
     @Given("User clicks on search query box")
     public void user_clicks_on_search_query_box() {
 
@@ -27,6 +26,9 @@ public class US_09_Error_Handling {
     }
 
 // **************************************************************************
+
+
+
 
 
     @Given("User enters destination on the search box")
