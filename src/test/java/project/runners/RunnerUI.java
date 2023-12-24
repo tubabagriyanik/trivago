@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 
         glue = "project.stepDefinitions",
 
-        tags = "@US07_Booking" ,
+        tags = "@US09_TC001" ,
 
         dryRun = false
 )
