@@ -6,10 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
 
-    @FindBy(xpath = "//button[@class='SearchButtonWithLoader_button___1Bps']")
+    @FindBy(xpath = "//button[@data-testid='search-button-with-loader']")
     public WebElement searchButton;
-
-
-
 
 }
