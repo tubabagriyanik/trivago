@@ -16,12 +16,14 @@
     </properties>
 
     <dependencies>
+
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.14.0</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -110,6 +112,9 @@
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.13</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+     
 
 
 
@@ -132,6 +137,7 @@ IF ONE BROWSER FAILS, OTHER PARALLEL TEST CASES CONTINUE TO EXECUTE-->
                     </includes>
                 </configuration>
             </plugin>
+
             <!--            2. RESPONSIBLE FOR PARALLEL TESTING -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
