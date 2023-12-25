@@ -15,8 +15,6 @@ public class Hook {
     public void setUp(){
 
     }
-    //
-
 
     @After
     public void tearDown(Scenario scenario){

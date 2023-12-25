@@ -32,6 +32,8 @@ public class FilteringandSortingPage extends BasePage {
     public WebElement sliderBox;
     @FindBy(xpath = "(//strong[@class='bg-grey-300'])[1]")
     public WebElement staysFound;
+    @FindBy(xpath = "//div[@class='max-w-screen-2xl m-auto py-5']")
+    public WebElement aroundclick;
 
 
 

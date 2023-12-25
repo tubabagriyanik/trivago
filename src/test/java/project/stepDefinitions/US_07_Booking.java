@@ -1,30 +1,55 @@
 package project.stepDefinitions;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import project.utilities.ConfigReader;
-import project.utilities.Driver;
+import project.pages.BookingPage;
+import project.utilities.ReusableMethods;
 
 public class US_07_Booking {
 
-
-    @Given("User navigates to {string}")
-    public void user_navigates_to(String string) {
+    BookingPage bookingPage = new BookingPage();
 
 
-    }
     @Then("User enters a destination on home page")
     public void user_enters_a_destination_on_home_page() {
 
     }
-    @When("User enters a destination")
 
+    @When("User enters a destination")
     public void user_enters_a_destination() {
+        bookingPage.EnterDestination.click();
+        bookingPage.EnterDestination.sendKeys("New York");
+
+
+    }
+    @When("User enters check in date")
+    public void user_enters_check_in_date() {
+
+        bookingPage.clickCheckInButton.click();
+        bookingPage.clickCheckInTonightButton.click();
+        ReusableMethods.waitFor(3);
+
+
+    }
+    @When("User enter check out date")
+    public void user_enter_check_out_date() {
+        bookingPage.clickCheckOutButton.click();
+        bookingPage.clickCheckOutTomorrowNightButton.click();
+        ReusableMethods.waitFor(3);
 
     }
     @When("User clicks on search button")
     public void user_clicks_on_search_button() {
+
+        bookingPage.searchButton.click();
+        ReusableMethods.waitFor(2);
+        bookingPage.closeCalender.click();
+        ReusableMethods.waitFor(6);
+
+
+    }
+    @When("User clicks on first view deal button")
+    public void user_clicks_on_first_view_deal_button() {
 
     }
     @When("User verifies url takes user to selected hotel web site")
@@ -43,4 +68,5 @@ public class US_07_Booking {
     public void user_verifies_booking_confirmation_page() {
 
     }
+
 }

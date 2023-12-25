@@ -4,9 +4,12 @@ Feature: Going to the booking page
 
 
     Given User navigates to "url"
-    Then User enters a destination on home page
+    Then User clicks on Destination home page
     When User enters a destination
+    And User enters check in date
+    And User enter check out date
     And User clicks on search button
+    And User clicks on first view deal button
     And User verifies url takes user to selected hotel web site
     And User verifies the booking page in another tab
     And User enter booking information
