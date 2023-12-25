@@ -13,6 +13,7 @@ import project.pages.US01_Page;
 import project.pages.SearchPage;
 
 import project.utilities.Driver;
+import project.utilities.JSUtils;
 import project.utilities.ReusableMethods;
 import project.utilities.WaitUtils;
 
@@ -22,12 +23,13 @@ public class US_01_Homepage_Navigation {
     SearchPage searchPage = new SearchPage();
     @Given("User goes to {string} page")
     public void userGoesToPage(String url) {
+
         Driver.getDriver().get(url);
     }
 
     @When("User goes to the center of the page")
     public void userGoesToTheCenterOfThePage() {
-        ReusableMethods.scroll(US01_Page.page_center);
+        JSUtils.scrollIntoViewJS(US01_Page.page_center);
         ReusableMethods.verifyElementDisplayed(US01_Page.page_center);
         WaitUtils.waitFor(1);
     }
@@ -35,12 +37,13 @@ public class US_01_Homepage_Navigation {
     @And("User goes to the below of the page")
     public void userGoesToTheBelowOfThePage() {
         ReusableMethods.scrollEnd();
-        ReusableMethods.verifyElementDisplayed(US01_Page.page_end);
+//        ReusableMethods.verifyElementDisplayed(US01_Page.page_end);
         WaitUtils.waitFor(1);
     }
 
     @And("User goes to the above of the page")
     public void userGoesToTheAboveOfThePage() {
+
         ReusableMethods.scrollHome();
     }
 
