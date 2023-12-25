@@ -9,5 +9,5 @@ Feature: Confirm that hotel details pages provide accurate information.
     Then user clicks the apply button
     And user verify the house price is visible
     When user clicks the house name
-    Then user clicks the info button
+    Then user clicks the overview button
     Then verify top amenities is visible
