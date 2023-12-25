@@ -1,89 +1,77 @@
 package project.stepDefinitions;
 
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import project.pages.HomePage;
 import project.pages.US01_Page;
-import project.pages.SearchPage;
 import project.utilities.Driver;
-import project.utilities.JSUtils;
 import project.utilities.ReusableMethods;
-import project.utilities.WaitUtils;
 
 public class US_01_Homepage_Navigation {
 
     HomePage homePage = new HomePage();
-    SearchPage searchPage = new SearchPage();
+    US01_Page us01Page = new US01_Page();
+
     @Given("User goes to {string} page")
     public void userGoesToPage(String url) {
-
-        Driver.getDriver().get(url);
+        WebDriver driver = Driver.getDriver();
+        driver.get(url);
+        //Driver.getDriver().get(url);
     }
 
-    @When("User goes to the center of the page")
-    public void userGoesToTheCenterOfThePage() {
-        JSUtils.scrollIntoViewJS(US01_Page.page_center);
-        ReusableMethods.verifyElementDisplayed(US01_Page.page_center);
-        WaitUtils.waitFor(1);
+    @Then("User should be on {string} page")
+    public void userShouldBeOnPage(String expectedUrl) {
+        WebDriver driver = Driver.getDriver();
+        String actualUrl = driver.getCurrentUrl();
+        Assert.assertEquals("The URL is not as expected!", expectedUrl, actualUrl);
     }
 
-    @And("User goes to the below of the page")
-    public void userGoesToTheBelowOfThePage() {
-        ReusableMethods.scrollEnd();
-//        ReusableMethods.verifyElementDisplayed(US01_Page.page_end);
-        WaitUtils.waitFor(1);
+    @Then("User select to {string} on Where to? button")
+    public void userSelectToOnWhereToButton(String city) {
+        ReusableMethods.waitFor(2);
+        us01Page.whereTo_tb.sendKeys("Washington D.C.");
+    }
+    @And("User  clicks checkIn button_tb")
+    public void userClicksCheckInButton_tb() {
+        ReusableMethods.waitFor(2);
+        us01Page.checkIn_tb.click();
+    }
+    @And("User clicks to close button on the check in field")
+    public void userClicksToCloseButtonOnTheCheckInField() {
+        ReusableMethods.waitFor(2);
+        us01Page.closeButton_tb.click();
     }
 
-    @And("User goes to the above of the page")
-    public void userGoesToTheAboveOfThePage() {
-
-        ReusableMethods.scrollHome();
+    @And("User clicks to Search button_tb")
+    public void userClicksToSearchButton_tb() {
+        ReusableMethods.waitFor(2);
+        us01Page.searchButton_tb.click();
     }
 
-    @And("User waits {int} seconds_tb")
-    public void userWaitsSeconds_tb(int sayi) {
-        try {
-            Thread.sleep(sayi*1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    @Then("User clicks to {string} button_tb")
-    public void userClicksToButton_tb(String arg0) {
-
-    }
-
-    @And("User input {string}")
-    public void userInput(String arg0) {
-    }
-
-    @And("User selects to {string}")
-    public void userSelectsTo(String arg0) {
-    }
-
-    @And("User clicks to Adult {string} button_tb")
-    public void userClicksToAdultButton_tb(String arg0) {
-    }
-
-    @And("User clicks to Children {string} button_tb")
-    public void userClicksToChildrenButton_tb(String arg0) {
-    }
-
-    @And("User clicks to Rooms {string} button_tb")
-    public void userClicksToRoomsButton_tb(String arg0) {
-    }
-
-    @And("User choose {string} age")
-    public void userChooseAge(String arg0) {
-    }
-
-    @And("User verify to search button")
-    public void userVerifyToSearchButton() {
+    @Then("User verify the  search button on the web page")
+    public void userVerifyTheSearchButtonOnTheWebPage() {
+        ReusableMethods.waitFor(2);
+        ReusableMethods.takeScreenshotAllScreen();
+        Assert.assertTrue(US01_Page.hotelSeen_tb.isDisplayed());
     }
 
 
 
 }
+
+
+
+/*
+@Then("User should be on {string} page") aciklama:
+Bu kod parçası, kullanıcının belirli bir URL'ye gittiğini doğrulamak için Cucumber'ın @Then adımını kullanır.
+Assert.assertEquals metodu ile beklenen URL ile gerçek URL karşılaştırılır. Eğer URL'ler uyuşmazsa,
+bir hata mesajı alırsınız. Bu yöntem, kullanıcının doğru sayfada olduğunu doğrulamanın basit ve etkili bir yoludur.
+
+Unutmayın ki, bu kod parçasının çalışması için projenizde JUnit ve Selenium WebDriver kütüphanelerinin
+bulunması gerekmektedir. Ayrıca, Driver sınıfınızın projenizdeki gerçek WebDriver sınıfınıza karşılık
+gelmesi gerektiğini unutmayın.
+ */
