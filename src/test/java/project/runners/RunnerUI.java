@@ -16,17 +16,7 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         glue = "project.stepDefinitions",
-
         tags = "" ,
-
-
-
-
-        tags = "@Us_04" ,
-
-
-
-
         dryRun = false
 )
 public class RunnerUI {
