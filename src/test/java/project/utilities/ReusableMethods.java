@@ -1,23 +1,24 @@
 package project.utilities;
+
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebElement;
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.time.Duration;
-import java.util.Date;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.function.Function;
+
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+
 public class ReusableMethods {
     /*
  This method captures sscreenshot of the entire page
@@ -175,7 +176,7 @@ public class ReusableMethods {
         }
     }
 
-    //========switchToNewTab=====//
+//    ========switchToNewTab=====//
     public static void switchToNewTab(){
         var windows = Driver.getDriver().getWindowHandles();
         windows.forEach(Driver.getDriver().switchTo()::window);
@@ -386,7 +387,39 @@ public class ReusableMethods {
     }
 
 
+    //Click Method
+    public static void click(WebElement element) {
+        try {
+            element.click();
+        } catch (Exception e) {
+            JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+            js.executeScript("arguments[0].click();", element);
+        }
+    }
 
+    //JS Scroll
+    public static void scroll(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    //JS Sayfa Sonu Scroll
+    public static void scrollEnd() {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+
+    //JS Sayfa Başı Scroll
+    public static void scrollHome() {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("window.scrollTo(0,-document.body.scrollHeight)");
+    }
+
+    //JS SendKeys
+    public static void sendKeysJS(WebElement element, String text) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("arguments[0].value='" + text + "'", element);
+    }
 
 
 
