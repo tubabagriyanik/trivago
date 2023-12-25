@@ -67,5 +67,4 @@ public class SearchPage extends BasePage{
     public static WebElement Hotels;
 
 
-
 }

@@ -26,8 +26,10 @@ public class Us_06_House_Details {
         ActionUtils.doubleClick(homePage.searchButton);
         WaitUtils.waitFor(1);
         searchPage.destination.sendKeys("Toronto", Keys.ENTER);
+        searchPage.checkInClick.click();
+
        searchPage.checkInClick.click();
-        searchPage.checkOutClick.click();
+       searchPage.checkOutClick.click();
         homePage.searchButton.click();
     }
     @Then("user clicks property type dropdown menu")
