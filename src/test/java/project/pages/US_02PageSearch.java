@@ -2,7 +2,7 @@ package project.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import project.utilities.ReusableMethods;
+
 
 public class US_02PageSearch extends BasePage {
 
