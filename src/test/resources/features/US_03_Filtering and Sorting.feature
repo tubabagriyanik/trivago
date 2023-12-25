@@ -3,7 +3,7 @@ Feature: Verify that users can filter and sort search results effectively.
 
   Scenario:TC01 Filtering and Sorting
 
-    Given User navigates to "url"
+#    Given User navigates to "url"
     Then User clicks on Destination home page
     And User waits 2 seconds
     When User enters a USA

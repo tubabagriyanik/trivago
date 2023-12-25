@@ -10,4 +10,6 @@ public class US01_Page extends BasePage{
 
     @FindBy(xpath = "//h2[text()='Popular searches']")
     public static WebElement page_end; //sayfa sonundaki 'Help' text TB
+    @FindBy(xpath = "//h2[text()='Popular searches']")
+    public static WebElement page_end2; //sayfa sonundaki 'Help' text TB
 }

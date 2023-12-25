@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
 
         glue = "project.stepDefinitions",
-        tags = "@us06" ,
+        tags = "@tb_US_01" ,
         dryRun = false
 )
 public class RunnerUI {
