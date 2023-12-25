@@ -175,7 +175,7 @@ public class ReusableMethods {
         }
     }
 
-    //========switchToNewTab=====//
+//    ========switchToNewTab=====//
     public static void switchToNewTab(){
         var windows = Driver.getDriver().getWindowHandles();
         windows.forEach(Driver.getDriver().switchTo()::window);
