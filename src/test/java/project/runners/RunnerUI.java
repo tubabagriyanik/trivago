@@ -17,7 +17,11 @@ import org.junit.runner.RunWith;
         },
         glue = "project.stepDefinitions",
 
-        tags = "@US02" ,
+
+
+        tags = "@Us_04" ,
+
+
 
 
         dryRun = false
