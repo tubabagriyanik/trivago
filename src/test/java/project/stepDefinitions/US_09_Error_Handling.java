@@ -40,7 +40,7 @@ public class US_09_Error_Handling {
         System.out.println("Error message: " +homePage.noResultsAlert.getText());
     }
 
-// **************************************************************************
+// **************************************************************************/
 
 
 
