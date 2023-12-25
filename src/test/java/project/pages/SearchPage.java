@@ -1,5 +1,6 @@
 package project.pages;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -28,6 +29,16 @@ public class SearchPage extends BasePage{
     @FindBy(xpath= "//article[@data-testid='amenities-module']")
     public WebElement topAmenities;
 
+    @FindBy(xpath = "//label[@data-testid='tonight-index-label']")
+    public WebElement tonightButton;
+    @FindBy(xpath = "//label[@data-testid='tomorrowNight-index-label']")
+    public WebElement tomorrowNightButton;
+    @FindBy(xpath = "//button[@data-testid='guest-selector-apply']")
+    public WebElement guestAndRoomsApply;
+    @FindBy(xpath = "//img[@ data-testid='accommodation-main-image'][1]")
+    public WebElement clickRandom;
+    @FindBy(xpath = "//button[@data-testid='champion-deal'][1]")
+    public WebElement viewDealButton;
 
 
     @FindBy(id = "input-auto-complete")

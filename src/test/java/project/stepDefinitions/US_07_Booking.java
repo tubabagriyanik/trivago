@@ -9,6 +9,12 @@ public class US_07_Booking {
 
     BookingPage bookingPage = new BookingPage();
 
+
+    @Then("User enters a destination on home page")
+    public void user_enters_a_destination_on_home_page() {
+
+    }
+
     @When("User enters a destination")
     public void user_enters_a_destination() {
         bookingPage.EnterDestination.click();

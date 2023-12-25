@@ -7,9 +7,14 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import project.pages.HomePage;
 import project.pages.SearchPage;
-import project.utilities.*;
+import project.utilities.ActionUtils;
+import project.utilities.ConfigReader;
+import project.utilities.Driver;
+import project.utilities.WaitUtils;
 
-public class us06_House_Details_stepDefs {
+
+public class Us_06_House_Details {
+
     HomePage homePage=new HomePage();
     SearchPage searchPage=new SearchPage();
     @Given("user go to home page")
@@ -20,7 +25,7 @@ public class us06_House_Details_stepDefs {
     public void user_clicks_on_search_button(){
         ActionUtils.doubleClick(homePage.searchButton);
         WaitUtils.waitFor(1);
-        searchPage.destination.sendKeys("Toronto"+ Keys.ENTER);
+        searchPage.destination.sendKeys("Toronto", Keys.ENTER);
         searchPage.checkInClick.click();
         searchPage.checkOutClick.click();
         homePage.searchButton.click();
@@ -58,6 +63,5 @@ public class us06_House_Details_stepDefs {
         Assert.assertTrue(searchPage.topAmenities.isDisplayed());
 
     }
-
 
 }

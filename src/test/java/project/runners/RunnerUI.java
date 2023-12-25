@@ -15,10 +15,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedRerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-
         glue = "project.stepDefinitions",
 
         tags = "@US02" ,
+
 
         dryRun = false
 )
