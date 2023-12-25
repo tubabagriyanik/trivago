@@ -5,8 +5,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import project.pages.HomePage;
+
 import project.pages.SearchPage;
 import project.pages.US01_Page;
+
+import project.pages.US01_Page;
+import project.pages.SearchPage;
+
 import project.utilities.Driver;
 import project.utilities.ReusableMethods;
 import project.utilities.WaitUtils;

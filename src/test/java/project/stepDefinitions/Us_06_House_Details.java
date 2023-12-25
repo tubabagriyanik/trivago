@@ -12,7 +12,9 @@ import project.utilities.ConfigReader;
 import project.utilities.Driver;
 import project.utilities.WaitUtils;
 
+
 public class Us_06_House_Details {
+
     HomePage homePage=new HomePage();
     SearchPage searchPage=new SearchPage();
     @Given("user go to home page")
@@ -25,7 +27,9 @@ public class Us_06_House_Details {
         WaitUtils.waitFor(1);
         searchPage.destination.sendKeys("Toronto", Keys.ENTER);
         searchPage.checkInClick.click();
-        searchPage.checkOutClick.click();
+
+       searchPage.checkInClick.click();
+       searchPage.checkOutClick.click();
         homePage.searchButton.click();
     }
     @Then("user clicks property type dropdown menu")
