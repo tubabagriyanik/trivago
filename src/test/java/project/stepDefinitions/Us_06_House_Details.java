@@ -12,7 +12,9 @@ import project.utilities.ConfigReader;
 import project.utilities.Driver;
 import project.utilities.WaitUtils;
 
+
 public class Us_06_House_Details {
+
     HomePage homePage=new HomePage();
     SearchPage searchPage=new SearchPage();
     @Given("user go to home page")
