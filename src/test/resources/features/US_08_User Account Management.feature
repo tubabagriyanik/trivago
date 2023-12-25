@@ -5,8 +5,6 @@ Feature:Confirm that user accounts can be managed successfully.
 
     Given Go to home page
     Then Log in as a user
-    Then Enter user email
-    Then Enter user password
     Then Click on the log in button
     When Click on the user account button
     And  Click on the account settings box

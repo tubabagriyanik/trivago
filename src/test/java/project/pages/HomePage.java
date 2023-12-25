@@ -9,4 +9,5 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//button[@data-testid='search-button-with-loader']")
     public WebElement searchButton;
 
+
 }
