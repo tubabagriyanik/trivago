@@ -17,6 +17,9 @@ import org.junit.runner.RunWith;
         },
         glue = "project.stepDefinitions",
 
+        tags = "" ,
+
+
 
 
         tags = "@Us_04" ,
