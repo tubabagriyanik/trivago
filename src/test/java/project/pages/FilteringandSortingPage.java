@@ -34,6 +34,8 @@ public class FilteringandSortingPage extends BasePage {
     public WebElement staysFound;
     @FindBy(xpath = "//div[@class='max-w-screen-2xl m-auto py-5']")
     public WebElement aroundclick;
+    @FindBy(xpath = "//button[@data-testid='filters-popover-apply-button']")
+    public WebElement filtersapplyayca;
 
 
 

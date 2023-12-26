@@ -55,6 +55,7 @@ public class US_03_FilteringandSortingStepDef {
     public void userClicksFivestarAndPopularFiltersAndChooseFreeCancellationBox() {
         filteringandSortingPage.fiveStarayca.click();
         filteringandSortingPage.Freecancellationayca.click();
+        filteringandSortingPage.filtersapplyayca.click();
         ReusableMethods.waitFor(2);
     }
 
