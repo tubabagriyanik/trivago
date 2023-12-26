@@ -1,5 +1,5 @@
 @US13
-  Feature: Filtering and Sorting
+  Feature: US13 Filtering and Sorting
     Scenario: TC001 Verify that users can filter and sort search results effectively
 
       Given User navigate to "url"

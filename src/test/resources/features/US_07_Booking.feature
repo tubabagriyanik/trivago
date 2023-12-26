@@ -1,5 +1,5 @@
 @US07_Booking
-Feature: 07 Going to the booking page
+Feature: US07 Going to the booking page
   Scenario:Verify the going to booking page successfully
 
 

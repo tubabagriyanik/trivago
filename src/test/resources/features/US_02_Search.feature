@@ -1,6 +1,6 @@
 
 @US02
-Feature: 02 Verify that user can use search functionalty by destination and by dates
+Feature: US02 Verify that user can use search functionalty by destination and by dates
 
   Scenario: TC_02_Searching
 

@@ -1,5 +1,5 @@
 @US_08
-Feature: 08 Confirm that user accounts can be managed successfully.
+Feature: US08 Confirm that user accounts can be managed successfully.
 
   Scenario:User Account Management
 
