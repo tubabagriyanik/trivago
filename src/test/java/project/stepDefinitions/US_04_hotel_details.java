@@ -10,7 +10,7 @@ public class US_04_hotel_details {
     SearchPage searchPage=new SearchPage();
     @Then("user selects the Hotel checkbox")
     public void user_selects_the_hotel_checkbox() {
-searchPage.Hotel.click();
+    searchPage.Hotel.click();
 
     }
 
