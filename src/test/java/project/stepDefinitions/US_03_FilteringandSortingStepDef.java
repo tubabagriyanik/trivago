@@ -55,13 +55,15 @@ public class US_03_FilteringandSortingStepDef {
     public void userClicksFivestarAndPopularFiltersAndChooseFreeCancellationBox() {
         filteringandSortingPage.fiveStarayca.click();
         filteringandSortingPage.Freecancellationayca.click();
+        filteringandSortingPage.filtersapplyayca.click();
         ReusableMethods.waitFor(2);
     }
 
     @And("User clicks on Guest Rating and choose Excellent")
     public void userClicksOnGuestRatingAndChooseExcellent() {
 
-//        filteringandSortingPage.guestFilterDropDown.click();
+       // filteringandSortingPage.guestFilterDropDown.click();bunda olmadi
+
         filteringandSortingPage.guestRatingayca.click();
         ReusableMethods.waitFor(2);
         filteringandSortingPage.excellentayca.click();
@@ -72,6 +74,7 @@ public class US_03_FilteringandSortingStepDef {
     public void userClicksOnPropertyTypeAndChooseHotelBox() {
         filteringandSortingPage.propertyT1.click();
         filteringandSortingPage.hotelbox.click();
+        filteringandSortingPage.propertytypesapplyayca.click();
         ReusableMethods.waitFor(2);
     }
 

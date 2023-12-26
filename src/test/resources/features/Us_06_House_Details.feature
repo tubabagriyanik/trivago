@@ -1,5 +1,9 @@
 @us06
+<<<<<<< HEAD
+Feature: 06 Confirm that hotel details pages provide accurate information.
+=======
 Feature: Confirm that house details pages provide accurate information.
+>>>>>>> main
 
   Scenario: Verify House Details Page
     Given user go to home page

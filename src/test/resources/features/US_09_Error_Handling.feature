@@ -1,5 +1,5 @@
 @US09
-Feature: Error Handling
+Feature: 09 Error Handling
 
   Background:
     Given User navigate to "url"
