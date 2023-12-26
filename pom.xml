@@ -139,6 +139,7 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
+                    <parallel>methods</parallel>
                     <testFailureIgnore>true</testFailureIgnore>
                     <skipTests>false</skipTests>
                     <includes>
@@ -157,7 +158,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M1</version> <!-- Use the same version as failsafe plugin -->
                 <configuration>
-                    <parallel>classes</parallel>
+                    <parallel>methods</parallel>
                     <threadCount>1</threadCount>
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <forkCount>1</forkCount>

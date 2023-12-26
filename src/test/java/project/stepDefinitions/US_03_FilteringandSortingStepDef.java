@@ -60,8 +60,10 @@ public class US_03_FilteringandSortingStepDef {
 
     @And("User clicks on Guest Rating and choose Excellent")
     public void userClicksOnGuestRatingAndChooseExcellent() {
-        filteringandSortingPage.guestFilterDropDown.click();
-//        filteringandSortingPage.guestRatingayca.click();
+
+//        filteringandSortingPage.guestFilterDropDown.click();
+
+        filteringandSortingPage.guestRatingayca.click();
         ReusableMethods.waitFor(2);
         filteringandSortingPage.excellentayca.click();
         ReusableMethods.waitFor(2);
