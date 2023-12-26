@@ -9,19 +9,19 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <argLine>-Duser.language=en</argLine>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <dependencies>
+
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.14.0</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.12.1</version>
+            <version>7.15.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
@@ -87,7 +87,7 @@
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20220320</version>
+            <version>20231013</version>
         </dependency>
 
         <!-- Gson is for data conversion-->
@@ -104,12 +104,26 @@
             <version>2.14.2</version>
         </dependency>
 
-        <!-- this library handle some issues related to objectMapper, and serialization-deserialization-->
+
+
         <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.13</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version> <!-- Use the latest version available -->
+            <scope>provided</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>maven-cucumber-reporting</artifactId>
+            <version>5.7.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+     
+
 
 
 
@@ -118,13 +132,14 @@
     <build>
         <plugins>
 
-            <!--        1. MAKES THE FAILURE SAFE DURING PARALLEL TESTING.
-IF ONE BROWSER FAILS, OTHER PARALLEL TEST CASES CONTINUE TO EXECUTE-->
+            <!-- 1. MAKES THE FAILURE SAFE DURING PARALLEL TESTING.
+               IF ONE BROWSER FAILS, OTHER PARALLEL TEST CASES CONTINUE TO EXECUTE-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
+                    <parallel>methods</parallel>
                     <testFailureIgnore>true</testFailureIgnore>
                     <skipTests>false</skipTests>
                     <includes>
@@ -132,13 +147,18 @@ IF ONE BROWSER FAILS, OTHER PARALLEL TEST CASES CONTINUE TO EXECUTE-->
                     </includes>
                 </configuration>
             </plugin>
+
+            <!-- 2. RESPONSIBLE FOR PARALLEL TESTING -->
+
+
             <!--            2. RESPONSIBLE FOR PARALLEL TESTING -->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M1</version>
+                <version>3.0.0-M1</version> <!-- Use the same version as failsafe plugin -->
                 <configuration>
-                    <parallel>classes</parallel>
+                    <parallel>methods</parallel>
                     <threadCount>1</threadCount>
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <forkCount>1</forkCount>
@@ -150,34 +170,8 @@ IF ONE BROWSER FAILS, OTHER PARALLEL TEST CASES CONTINUE TO EXECUTE-->
                 </configuration>
             </plugin>
 
-            <!--            3. GENERATES REPORTS AFTER TEST EXECUTION WITH MAVEN-->
-            <plugin>
-                <groupId>net.masterthought</groupId>
-                <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.0.0</version>
-                <executions>
-                    <execution>
-                        <id>execution</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>cucumber-framework</projectName>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                            <!--                            <cucumberOutput>${project.build.directory}</cucumberOutput>-->
-                            <inputDirectory>${project.build.directory}</inputDirectory>
-                            <jsonFiles>
-                                <param>**/json-reports/*.json</param>
-                            </jsonFiles>
-                            <classificationFiles>->
-                                <param>sample.properties</param>
-                                <param>other.properties</param>
-                            </classificationFiles>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+
+
         </plugins>
     </build>
 
@@ -196,6 +190,15 @@ IF ONE BROWSER FAILS, OTHER PARALLEL TEST CASES CONTINUE TO EXECUTE-->
             <pluginManagement>
                 <plugins>
 
+                            <plugin>
+                                <groupId>org.apache.maven.plugins</groupId>
+                                <artifactId>maven-compiler-plugin</artifactId>
+                                <version>2.3.2</version> <!-- Replace with the latest version -->
+                                <configuration>
+                                    <source>17</source>
+                                    <target>17</target>
+                                </configuration>
+                            </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>
@@ -309,13 +312,6 @@ IF ONE BROWSER FAILS, OTHER PARALLEL TEST CASES CONTINUE TO EXECUTE-->
                 </pluginManagement>
             </build>
         </profile>
-
-
-
-
-
-
-
 
     </profiles>
 
