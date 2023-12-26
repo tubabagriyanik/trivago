@@ -41,6 +41,11 @@ public class SearchPage extends BasePage{
     public WebElement viewDealButton;
 
 
+
+
+
+    @FindBy(xpath = "//li[@data-testid='accommodation-type-filter-hotel']")//div[@class='fresnel-container fresnel-greaterThanOrEqual-2xl fresnel-:rf:']
+    public WebElement Hotel;
     @FindBy(id = "input-auto-complete")
     public WebElement InputBanf;
 
@@ -59,7 +64,7 @@ public class SearchPage extends BasePage{
     public WebElement clickX;
     @FindBy(xpath = "//span[@title='Banff Park Lodge'] ")
 
-    public static WebElement Hotels;
+    public  WebElement Hotels;
 
 
 }
