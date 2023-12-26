@@ -1,5 +1,5 @@
 @US03
-Feature: 03 Verify that users can filter and sort search results effectively.
+Feature: US03 Verify that users can filter and sort search results effectively.
 
   Scenario:TC01 Filtering and Sorting
 
