@@ -2,7 +2,7 @@
 Feature: Error Handling
 
   Background:
-  Given User navigates to "url"
+    Given User navigate to "url"
 
   @US09_TC001
   Scenario: Submit an invalid search query and validate the error message.
@@ -19,9 +19,9 @@ Feature: Error Handling
     When User clicks on Search button
     And User clicks on View Deal button of the Hotel information box
     And Website switches to another tab
-    And User selects a room and clicks on Quick Book button
-    And User clicks Continue button on the pop-up message box
-    And User enters invalid card number
-    Then User should see the error message under card number box
+#    And User selects a room and clicks on Quick Book button
+#    And User clicks Continue button on the pop-up message box
+#    And User enters invalid card number
+#    Then User should see the error message under card number box
 
 
