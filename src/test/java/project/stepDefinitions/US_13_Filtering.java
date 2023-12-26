@@ -1,4 +1,4 @@
-package aaaaaaaaaaaaaaaaaaaaaaaaaaaaa;
+package project.stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -20,18 +20,16 @@ public class US_13_Filtering {
     US_13Filtering us13Filtering = new US_13Filtering();
 
 
-    @Then("User enters {string} on Destination box")
-    public void user_enters_on_destination_box(String word) {
-       us13Filtering.destinationPoint.sendKeys(word,Keys.ENTER);
+    @Then("User enters destination on Destination box")
+    public void userEntersDestinationOnDestinationBox() {
+        us13Filtering.destinationPoint.sendKeys("New");
+         us13Filtering.selectNewYork.click();
     }
 
     @When("user  checks in and checks out.")
     public void user_checks_in_and_checks_out() {
-        us13Filtering.destinationPoint.sendKeys(Keys.TAB);
 
         us13Filtering.nextWeekend.click();
-
-
     }
     @When("user enters Adults, Children and Rooms number and clicks apply button")
     public void user_enters_adults_children_and_rooms_number_and_clicks_apply_button() {

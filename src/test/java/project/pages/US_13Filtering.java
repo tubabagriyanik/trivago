@@ -10,21 +10,16 @@ public class US_13Filtering extends BasePage {
     @FindBy(xpath = "//*[@id='input-auto-complete']")
     public WebElement destinationPoint;
 
-    @FindBy(xpath = "//*[text()='New York']")
+    @FindBy(xpath = "//span[text()='City · New York State, USA']")
     public WebElement selectNewYork;
+
+    @FindBy(xpath = "//*[data-testid='search-form-calendar-checkin']")
+    public WebElement checkIn;
+
 
     @FindBy(xpath = "//button[@class='SearchButtonWithLoader_button___1Bps']")
     public WebElement searchButton;
 
-
-
-    @FindBy(xpath = "(//*[@class='flex justify-center items-center text-m h-9 w-9'])[20]")
-    public WebElement dateStarting;
-
-
-
-    @FindBy(xpath = "(//*[@class='flex justify-center items-center text-m h-9 w-9'])[50]")
-    public WebElement dateEnding;
 
     @FindBy(xpath = "//*[@ data-testid='nextWeekend-index-label']")
     public WebElement nextWeekend;
@@ -38,8 +33,6 @@ public class US_13Filtering extends BasePage {
 
     @FindBy(xpath = "//*[@data-testid='loading-animation-accommodations-counter']")
     public WebElement staysFoundText;
-
-
 
 
 
