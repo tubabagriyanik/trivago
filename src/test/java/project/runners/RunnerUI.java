@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
         },
 
 
-        glue = "project.stepDefinitions",
+        glue = {"project.stepDefinitions","hooks"},
         tags = "" ,
         dryRun = false
 )
