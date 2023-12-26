@@ -86,7 +86,7 @@ public class US_09_Error_Handling {
     @When("Website switches to another tab")
     public void website_switches_to_another_tab() {
 //        ReusableMethods.switchToTab("Available Rooms - Hilton Waikoloa Village");
-        ReusableMethods.switchToNewTab();
+          ReusableMethods.switchToNewTab();
     }
     @When("User selects a room and clicks on Quick Book button")
     public void user_selects_a_room_and_clicks_on_quick_book_button() {
@@ -94,7 +94,6 @@ public class US_09_Error_Handling {
 //        bookingPage.quickBookButton.click();
         bookingPage.vioViewDeal.click();
         ReusableMethods.waitFor(10);
-
     }
     @When("User clicks Continue button on the pop-up message box")
     public void user_clicks_continue_button_on_the_pop_up_message_box() {
