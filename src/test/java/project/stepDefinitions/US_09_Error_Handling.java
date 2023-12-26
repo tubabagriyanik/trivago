@@ -21,7 +21,6 @@ public class US_09_Error_Handling {
 
     HomePage homePage=new HomePage();
     SearchPage searchPage=new SearchPage();
-
     BookingPage bookingPage = new BookingPage();
 
     @Given("User clicks on search query box")
@@ -32,7 +31,7 @@ public class US_09_Error_Handling {
     }
     @When("User enters invalid data")
     public void user_enters_invalid_data() {
-       searchPage.destination.sendKeys("cdncisi8939823" + Keys.ENTER);
+        searchPage.destination.sendKeys("cdncisi8939823" + Keys.ENTER);
         searchPage.destination.clear();
         searchPage.destination.sendKeys("cdncisi8939823" + Keys.ENTER);
 
@@ -45,12 +44,6 @@ public class US_09_Error_Handling {
     }
 
 // **************************************************************************/
-
-
-//    cjxbdfkbhv
-
-//    dcbhsdjhbds
-//jsbchbd
 
 
 
