@@ -54,14 +54,14 @@ public class US_03_FilteringandSortingStepDef {
     @And("User clicks fivestar and Popular filters and choose Free cancellation box")
     public void userClicksFivestarAndPopularFiltersAndChooseFreeCancellationBox() {
         filteringandSortingPage.fiveStarayca.click();
-        filteringandSortingPage.Freecancellationayca.click();
+//        filteringandSortingPage.Freecancellationayca.click();
         ReusableMethods.waitFor(2);
     }
 
     @And("User clicks on Guest Rating and choose Excellent")
     public void userClicksOnGuestRatingAndChooseExcellent() {
         filteringandSortingPage.guestFilterDropDown.click();
-//        filteringandSortingPage.guestRatingayca.click();
+        filteringandSortingPage.guestRatingayca.click();
         ReusableMethods.waitFor(2);
         filteringandSortingPage.excellentayca.click();
         ReusableMethods.waitFor(2);

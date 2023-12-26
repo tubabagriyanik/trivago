@@ -62,6 +62,7 @@ public class Us_06_House_Details {
     }
     @Then("verify top amenities is visible")
     public void verify_top_amenities_is_visible(){
+        WaitUtils.waitForVisibility(searchPage.topAmenities,2);
         Assert.assertTrue(searchPage.topAmenities.isDisplayed());
 
     }
