@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Regression Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 26, 2023 02:43:00 PM</span></a>
+<a href="#"><span class="badge badge-primary">Dec 26, 2023 01:47:12 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 26, 2023 02:43:00 PM</h3>
+<h3>Dec 26, 2023 01:47:12 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 26, 2023 02:43:13 PM</h3>
+<h3>Dec 26, 2023 01:47:25 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Filtering and Sorting":11.612
+"Error Handling":11.389
 };
 </script>
 <div class="row">
@@ -172,7 +172,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@US13</td>
+<td>@US09_TC001</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US09</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +221,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 6,
+passGrandChild: 4,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@US13</a>
+<a class="dropdown-item" href="#">@US09_TC001</a><a class="dropdown-item" href="#">@US09</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Filtering and Sorting</p>
+            <p class="name">Error Handling</p>
             <p class="text-sm">
-              <span>2:43:01 PM</span> / <span>00:00:11:612</span>
+              <span>1:47:13 PM</span> / <span>00:00:11:389</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Filtering and Sorting</h5>
-<span class='badge badge-success'>12.26.2023 2:43:01 PM</span>
-<span class='badge badge-danger'>12.26.2023 2:43:13 PM</span>
-<span class='badge badge-default'>00:00:11:612</span>
+<h5 class="test-status text-pass">Error Handling</h5>
+<span class='badge badge-success'>12.26.2023 1:47:13 PM</span>
+<span class='badge badge-danger'>12.26.2023 1:47:25 PM</span>
+<span class='badge badge-default'>00:00:11:389</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,7 +282,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC001 Verify that users can filter and sort search results effectively</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Submit an invalid search query and validate the error message.</div>
       </div>
     </div>
         <div class="collapse">
@@ -284,28 +292,18 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="project.stepDefinitions.US_13_Filtering.userEntersDestinationOnDestinationBox()">
-                <span>Then User enters destination on Destination box</span>
+              <div class="step pass-bg" title="project.stepDefinitions.US_09_Error_Handling.user_clicks_on_search_query_box()">
+                <span>Given User clicks on search query box</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="project.stepDefinitions.US_13_Filtering.user_checks_in_and_checks_out()">
-                <span>When user  checks in and checks out.</span>
+              <div class="step pass-bg" title="project.stepDefinitions.US_09_Error_Handling.user_enters_invalid_data()">
+                <span>When User enters invalid data</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="project.stepDefinitions.US_13_Filtering.user_enters_adults_children_and_rooms_number_and_clicks_apply_button()">
-                <span>And user enters Adults, Children and Rooms number and clicks apply button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="project.stepDefinitions.US_13_Filtering.user_clicks_the_search_button()">
-                <span>And User clicks the search button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="project.stepDefinitions.US_13_Filtering.validate_filters_and_sort_results()">
-                <span>Then validate filters and sort results</span>
+              <div class="step pass-bg" title="project.stepDefinitions.US_09_Error_Handling.user_should_see_the_error_message()">
+                <span>Then User should see the error message.</span>
       <div>
       </div>
               </div>
@@ -328,7 +326,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -337,12 +335,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US13</p>
+<p class="name">@US09_TC001</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US13</h4>
+<h4>@US09_TC001</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -356,11 +354,47 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:43:01 PM</td>
+<td>13:47:13 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC001 Verify that users can filter and sort search results effectively</a>
+<a href="#" class="linked" test-id='1' id='2'>Submit an invalid search query and validate the error message.</a>
 <div class="">
-<span class="badge badge-default">Filtering and Sorting.TC001 Verify that users can filter and sort search results effectively</span>
+<span class="badge badge-default">Error Handling.Submit an invalid search query and validate the error message.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US09</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US09</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:47:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Submit an invalid search query and validate the error message.</a>
+<div class="">
+<span class="badge badge-default">Error Handling.Submit an invalid search query and validate the error message.</span>
 </div>
 </td>
 </tr>
