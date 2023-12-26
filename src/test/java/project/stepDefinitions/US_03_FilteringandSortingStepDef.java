@@ -62,8 +62,6 @@ public class US_03_FilteringandSortingStepDef {
     public void userClicksOnGuestRatingAndChooseExcellent() {
 
 //        filteringandSortingPage.guestFilterDropDown.click();
-
-
         filteringandSortingPage.guestRatingayca.click();
         ReusableMethods.waitFor(2);
         filteringandSortingPage.excellentayca.click();
