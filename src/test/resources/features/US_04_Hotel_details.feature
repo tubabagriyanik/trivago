@@ -1,5 +1,5 @@
 @Us_04
-Feature: hotel details
+Feature: 04 hotel details
 
   Scenario: Verify hotel details
     Given user go to home page

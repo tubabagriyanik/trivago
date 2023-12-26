@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
 
 
         glue = {"project.stepDefinitions","hooks"},
-        tags = "" ,
+        tags = "@US03" ,
 
         dryRun = false
 )
