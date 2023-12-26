@@ -2,7 +2,7 @@
 Feature: Error Handling
 
   Background:
-  Given User navigates to "url"
+    Given User navigate to "url"
 
   @US09_TC001
   Scenario: Submit an invalid search query and validate the error message.

@@ -3,7 +3,7 @@ Feature: Going to the booking page
   Scenario:Verify the going to booking page successfully
 
 
-    Given User navigates to "url"
+    Given User navigate to "url"
     Then User clicks on Destination home page
     When User enters a destination
     And User enters check in date
