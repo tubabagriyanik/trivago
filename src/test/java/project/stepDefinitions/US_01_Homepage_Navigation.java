@@ -7,15 +7,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import project.pages.HomePage;
-
-import project.pages.SearchPage;
 import project.pages.US01_Page;
-
-import project.pages.US01_Page;
-
-import project.pages.SearchPage;
-
-
 import project.utilities.Driver;
 import project.utilities.ReusableMethods;
 
