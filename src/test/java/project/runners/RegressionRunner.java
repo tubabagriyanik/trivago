@@ -16,7 +16,8 @@ import org.junit.runner.RunWith;
         },
         features = ".//src//test//resources//features",
         glue = {"project.stepDefinitions"},
-        dryRun = false
+        dryRun = false,
+        monochrome=true
 
 )
 public class RegressionRunner {
