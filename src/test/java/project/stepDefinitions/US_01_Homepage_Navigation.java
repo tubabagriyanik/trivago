@@ -13,7 +13,6 @@ import project.utilities.ReusableMethods;
 
 public class US_01_Homepage_Navigation {
 
-    HomePage homePage = new HomePage();
     US01_Page us01Page = new US01_Page();
 
     @Given("User goes to {string} page")

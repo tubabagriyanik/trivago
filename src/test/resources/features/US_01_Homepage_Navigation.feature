@@ -1,5 +1,5 @@
 @tb_US_01
-Feature: Homepage Navigation
+Feature: US01 Homepage Navigation
 
   Scenario: Homepage load and  search bar is functional
     Given User goes to "https://www.trivago.com/" page

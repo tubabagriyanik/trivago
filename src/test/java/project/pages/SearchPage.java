@@ -44,7 +44,7 @@ public class SearchPage extends BasePage{
 
 
 
-@FindBy(xpath = "//div[@class='fresnel-container fresnel-greaterThanOrEqual-2xl fresnel-:rf:']")
+    @FindBy(xpath = "//li[@data-testid='accommodation-type-filter-hotel']")//div[@class='fresnel-container fresnel-greaterThanOrEqual-2xl fresnel-:rf:']
     public WebElement Hotel;
     @FindBy(id = "input-auto-complete")
     public WebElement InputBanf;
@@ -62,9 +62,10 @@ public class SearchPage extends BasePage{
     public WebElement SearchButton;
     @FindBy(xpath = "//button[@type='button' and @class='absolute right-0 m-4 z-5' and @data-testid='calendar-button-close']\n")
     public WebElement clickX;
-    @FindBy(xpath = "//span[@title='Banff Park Lodge'] ")
-
-    public static WebElement Hotels;
+    @FindBy(xpath = "//img[@data-testid='accommodation-main-image']")
+    public  WebElement firstHotelPhoto;
+    @FindBy(xpath = "//p[@data-testid='recommended-price']")
+    public  WebElement firstHotelPriceUs4;
 
 
 }

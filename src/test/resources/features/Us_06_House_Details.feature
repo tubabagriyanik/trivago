@@ -1,5 +1,8 @@
 @us06
-Feature: Confirm that hotel details pages provide accurate information.
+
+Feature: US06 Confirm that hotel details pages provide accurate information.
+
+
 
   Scenario: Verify House Details Page
     Given user go to home page

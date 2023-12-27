@@ -24,7 +24,7 @@ public class US_02_StepDefs {
     public void user_input_on_where_to_field(String string) {
         ReusableMethods.waitFor(2);
         page.InputBanf.sendKeys("Banf");
-//saida
+
     }
 
     @And("user clicks CheckIn button")
