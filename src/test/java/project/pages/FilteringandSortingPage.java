@@ -41,6 +41,9 @@ public class FilteringandSortingPage extends BasePage {
     @FindBy(xpath = "//button[@data-testid='filters-popover-apply-button']")
     public WebElement propertytypesapplyayca;
 
+@FindBy(xpath = "//button[@data-testid='filters-popover-apply-button']")
+    public WebElement guestRatingApplyButton;
+
 
 
 

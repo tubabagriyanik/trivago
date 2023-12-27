@@ -9,9 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
-                "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml",
-                "html:testOutput/reports/cucumber_DB_Regression.html",
+                "html:testOutput/reports/cucumberRegression.html",
                 "rerun:target/failedRerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },

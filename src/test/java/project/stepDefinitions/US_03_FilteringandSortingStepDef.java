@@ -63,11 +63,12 @@ public class US_03_FilteringandSortingStepDef {
     public void userClicksOnGuestRatingAndChooseExcellent() {
 
        // filteringandSortingPage.guestFilterDropDown.click();bunda olmadi
-
         filteringandSortingPage.guestRatingayca.click();
-        ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(1);
         filteringandSortingPage.excellentayca.click();
-        ReusableMethods.waitFor(2);
+//        ReusableMethods.waitFor(2);
+        filteringandSortingPage.guestRatingApplyButton.click();
+        ReusableMethods.waitFor(1);
     }
 
     @And("User clicks on Property Type and choose Hotel box")

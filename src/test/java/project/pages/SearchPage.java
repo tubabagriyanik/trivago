@@ -62,9 +62,10 @@ public class SearchPage extends BasePage{
     public WebElement SearchButton;
     @FindBy(xpath = "//button[@type='button' and @class='absolute right-0 m-4 z-5' and @data-testid='calendar-button-close']\n")
     public WebElement clickX;
-    @FindBy(xpath = "//span[@title='Banff Park Lodge'] ")
-
-    public  WebElement Hotels;
+    @FindBy(xpath = "//img[@data-testid='accommodation-main-image']")
+    public  WebElement firstHotelPhoto;
+    @FindBy(xpath = "//p[@data-testid='recommended-price']")
+    public  WebElement firstHotelPriceUs4;
 
 
 }
