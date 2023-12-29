@@ -19,7 +19,7 @@ public class US_01_Homepage_Navigation {
     public void userGoesToPage(String url) {
         WebDriver driver = Driver.getDriver();
         driver.get(url);
-        //Driver.getDriver().get(url);
+        //  Driver.getDriver().get(url);
     }
 
     @Then("User should be on {string} page")
