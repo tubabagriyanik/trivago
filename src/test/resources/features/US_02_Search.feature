@@ -1,6 +1,7 @@
 
-@US02
+@US02, @regression
 Feature: US02 Verify that user can use search functionalty by destination and by dates
+
 
   Scenario: TC_02_Searching
 

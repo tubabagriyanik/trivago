@@ -1,6 +1,7 @@
-@tb_US_01
+@tb_US_01, @regression6
 Feature: US01 Homepage Navigation
 
+  @regression
   Scenario: Homepage load and  search bar is functional
     Given User goes to "https://www.trivago.com/" page
     Then User should be on "https://www.trivago.com/" page

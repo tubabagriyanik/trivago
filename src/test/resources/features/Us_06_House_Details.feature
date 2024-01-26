@@ -1,8 +1,6 @@
-@us06
+@us06, @regression
 
 Feature: US06 Confirm that hotel details pages provide accurate information.
-
-
 
   Scenario: Verify House Details Page
     Given user go to home page

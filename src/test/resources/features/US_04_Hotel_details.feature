@@ -1,5 +1,6 @@
-@Us_04
+@Us_04, @regression
 Feature: US04 hotel details
+
 
   Scenario: Verify hotel details
     Given user go to home page

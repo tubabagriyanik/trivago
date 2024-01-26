@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
       
 
         glue = {"project.stepDefinitions","hooks"},
-        tags = "@tb_US_01" ,
+        tags = "" ,
         dryRun = false
 )
 public class RunnerUI {

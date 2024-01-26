@@ -1,5 +1,6 @@
-@US03
+@US03, @regression
 Feature: US03 Verify that users can filter and sort search results effectively.
+
 
   Scenario:TC01 Filtering and Sorting
 

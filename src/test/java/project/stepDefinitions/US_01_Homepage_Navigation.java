@@ -26,7 +26,7 @@ public class US_01_Homepage_Navigation {
     public void userShouldBeOnPage(String expectedUrl) {
         WebDriver driver = Driver.getDriver();
         String actualUrl = driver.getCurrentUrl();
-        Assert.assertEquals("The URL is not as expected!", expectedUrl, actualUrl);
+        Assert.assertEquals("The URL is not as expected!", expectedUrl, actualUrl); //beklenen
     }
 
     @Then("User select to {string} on Where to? button")
